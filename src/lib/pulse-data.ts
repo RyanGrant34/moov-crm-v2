@@ -1,0 +1,165 @@
+export type PulseType = 'news' | 'linkedin' | 'press_release' | 'event' | 'budget';
+
+export interface PulseItem {
+  id: string;
+  districtId: string;
+  districtName: string;
+  type: PulseType;
+  headline: string;
+  summary: string;
+  source: string;
+  date: string;
+  reachOutHint: string;
+  urgent?: boolean;
+}
+
+export const pulseItems: PulseItem[] = [
+  {
+    id: 'p1',
+    districtId: 'oakwood',
+    districtName: 'Oakwood',
+    type: 'budget',
+    headline: 'Oakwood USD approves $2.1M tech infrastructure budget for FY2026',
+    summary: 'School board voted 6-1 to approve expanded technology spending, with specific line items for student access management and safety systems.',
+    source: 'Oakwood Tribune',
+    date: '2025-11-18',
+    reachOutHint: 'Budget approved — great time to push the outstanding Kiosk PO. James has the funds.',
+    urgent: true,
+  },
+  {
+    id: 'p2',
+    districtId: 'willowbrook',
+    districtName: 'Willowbrook',
+    type: 'news',
+    headline: 'Willowbrook HS named NJ Top 10 in state safety audit',
+    summary: 'The state DOE recognized Willowbrook for its improvements in campus access protocols. Principal cited a need for "smarter hardware at entry points."',
+    source: 'NJ Education Wire',
+    date: '2025-11-14',
+    reachOutHint: 'They just won a safety award — perfect angle: "Congrats, our kiosks would complete the picture."',
+    urgent: true,
+  },
+  {
+    id: 'p3',
+    districtId: 'lone-star',
+    districtName: 'Lone Star',
+    type: 'linkedin',
+    headline: 'Carlos Vega posted: "Exploring modern student ID systems for our academy"',
+    summary: 'Decision maker publicly signaling interest in upgrading their ID infrastructure. Post has 47 likes from other TX school admins.',
+    source: 'LinkedIn',
+    date: '2025-11-20',
+    reachOutHint: 'He\'s publicly shopping. Reply to the post + follow up on Q 792052 same day.',
+    urgent: true,
+  },
+  {
+    id: 'p4',
+    districtId: 'foxhill',
+    districtName: 'Foxhill',
+    type: 'event',
+    headline: 'Foxhill USD hosting regional principals summit — Jan 14, 2026',
+    summary: 'Gretchen Holt is co-organizing a PA district tech showcase. 12 neighboring districts attending.',
+    source: 'Foxhill District Newsletter',
+    date: '2025-11-10',
+    reachOutHint: 'Ask Gretchen if MOOV can demo at the summit. One event → 12 warm referrals.',
+  },
+  {
+    id: 'p5',
+    districtId: 'suncoast',
+    districtName: 'Suncoast',
+    type: 'news',
+    headline: 'Florida DOE mandates digital student tracking logs by March 2026',
+    summary: 'New state compliance requirement covers all public and charter schools. Manual sign-in sheets will not meet the standard.',
+    source: 'FL DOE Bulletin',
+    date: '2025-11-08',
+    reachOutHint: 'Compliance deadline creates urgency. Send Angela a one-liner: "March deadline — we can have you live in 3 weeks."',
+    urgent: true,
+  },
+  {
+    id: 'p6',
+    districtId: 'bay-state',
+    districtName: 'Bay State',
+    type: 'linkedin',
+    headline: 'Richard Chen shared article: "Why Vocational Schools Need Smarter Attendance Systems"',
+    summary: 'Richard actively engaging with EdTech content. Has commented on 3 posts about student flow management this month.',
+    source: 'LinkedIn',
+    date: '2025-11-17',
+    reachOutHint: 'Warm lead becoming warmer. Follow up on the $675 pilot — if it closes, it opens the door to the full district.',
+  },
+  {
+    id: 'p7',
+    districtId: 'elmwood',
+    districtName: 'Elmwood',
+    type: 'news',
+    headline: 'Elmwood ISD superintendent replaced following board restructure',
+    summary: 'Former superintendent retired. New interim named this week. Decision-making authority may have shifted.',
+    source: 'Elmwood Gazette',
+    date: '2025-11-21',
+    reachOutHint: 'Rebecca Torres may have new chain of command. Re-introduce MOOV to the new admin before Q 227406 goes cold.',
+    urgent: true,
+  },
+  {
+    id: 'p8',
+    districtId: 'sunrise-academy',
+    districtName: 'Sunrise Academy',
+    type: 'event',
+    headline: 'Sunrise Academy hosting charter school open enrollment — Dec 3',
+    summary: 'Enrollment event expected to bring 200+ prospective families. Paul Decker confirmed as lead for the event.',
+    source: 'Sunrise Academy Website',
+    date: '2025-11-19',
+    reachOutHint: 'Great timing — reach out and offer a student ID bundle in time for new enrollment. Upsell from $850 to a larger pilot.',
+  },
+  {
+    id: 'p9',
+    districtId: 'oakwood',
+    districtName: 'Oakwood',
+    type: 'linkedin',
+    headline: 'James Whitfield connected with 3 MOOV competitors on LinkedIn',
+    summary: 'Activity suggests James may be doing competitive research. Two of the profiles are sales reps from rival EdTech vendors.',
+    source: 'LinkedIn',
+    date: '2025-11-22',
+    reachOutHint: 'Competitor activity detected. Call James this week — don\'t let the pending quotes go stale.',
+    urgent: true,
+  },
+  {
+    id: 'p10',
+    districtId: 'suncoast',
+    districtName: 'Suncoast',
+    type: 'press_release',
+    headline: 'Suncoast Academy named Florida Charter School of the Year finalist',
+    summary: 'Recognition highlights the academy\'s academic programs and operational improvements over the past 18 months.',
+    source: 'FL Charter Association',
+    date: '2025-11-05',
+    reachOutHint: 'Congratulate Angela — "Schools of the Year use tools that match their reputation. Let\'s close this out."',
+  },
+  {
+    id: 'p11',
+    districtId: 'foxhill',
+    districtName: 'Foxhill',
+    type: 'budget',
+    headline: 'Foxhill USD E-Rate Category 2 application approved: $48K tech allocation',
+    summary: 'Federal E-Rate funding confirmed for network infrastructure and campus connectivity improvements.',
+    source: 'USAC E-Rate Database',
+    date: '2025-11-16',
+    reachOutHint: 'E-Rate funding unlocked. PoE Readers on Q 559940 are E-Rate eligible — remind Gretchen.',
+    urgent: true,
+  },
+  {
+    id: 'p12',
+    districtId: 'willowbrook',
+    districtName: 'Willowbrook',
+    type: 'budget',
+    headline: 'Willowbrook School Board Q2 budget meeting scheduled Dec 10',
+    summary: 'Agenda includes technology procurement approvals. Items under $50K can be approved at board level without additional review.',
+    source: 'Willowbrook District Calendar',
+    date: '2025-11-23',
+    reachOutHint: 'Q 809415 is $34,875 — under the $50K threshold. Get Diana to add it to the Dec 10 agenda.',
+    urgent: true,
+  },
+];
+
+export const pulseTypeConfig: Record<PulseType, { label: string; color: string; bg: string }> = {
+  news: { label: 'News', color: '#3b82f6', bg: 'rgba(59,130,246,0.1)' },
+  linkedin: { label: 'LinkedIn', color: '#0ea5e9', bg: 'rgba(14,165,233,0.1)' },
+  press_release: { label: 'Press Release', color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)' },
+  event: { label: 'Event', color: '#f59e0b', bg: 'rgba(245,158,11,0.1)' },
+  budget: { label: 'Budget Signal', color: '#22c55e', bg: 'rgba(34,197,94,0.1)' },
+};
