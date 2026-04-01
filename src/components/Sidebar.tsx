@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Kanban, Users, Activity, BarChart3, Zap, MapPin, Radio, Calculator, CheckSquare, Mail, Package, Truck, Wallet } from 'lucide-react';
+import { LayoutDashboard, Kanban, Users, Activity, BarChart3, Zap, MapPin, Radio, Calculator, CheckSquare, Mail, Package, Truck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const mainNav = [
@@ -25,9 +25,6 @@ const toolsNav = [
   { href: '/deliveries', label: 'Deliveries', icon: Truck },
 ];
 
-const financeNav = [
-  { href: '/finance', label: 'Finance', icon: Wallet },
-];
 
 export default function Sidebar() {
   const path = usePathname();
@@ -103,24 +100,6 @@ export default function Sidebar() {
           );
         })}
 
-        {/* Finance section */}
-        <div className="h-px bg-[#27272a] mx-2 my-3" />
-        <p className="text-[10px] font-semibold text-[#3f3f46] uppercase tracking-wider px-2 mb-2">Finance</p>
-        {financeNav.map(({ href, label, icon: Icon }) => {
-          const active = path.startsWith('/finance');
-          return (
-            <Link key={href} href={href}
-              className={cn(
-                'flex items-center gap-2.5 px-2.5 py-2 rounded-md text-sm mb-0.5 transition-all',
-                active
-                  ? 'bg-[#22c55e]/10 text-[#22c55e] font-medium'
-                  : 'text-[#71717a] hover:text-[#a1a1aa] hover:bg-[#1c1c1f]'
-              )}>
-              <Icon size={14} />
-              {label}
-            </Link>
-          );
-        })}
       </nav>
 
       {/* Quick action */}
