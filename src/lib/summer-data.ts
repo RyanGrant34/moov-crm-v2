@@ -76,36 +76,36 @@ export const PHASE_ORDER: Record<DeployPhase, number> = {
 export const PHASE_CHECKLIST: Record<DeployPhase, string[]> = {
   confirmed: [
     'Agreement signed and on file',
-    'Hardware order placed (kiosk + reader counts confirmed)',
-    'Install window confirmed with school contact',
+    'Hardware order placed — counts confirmed',
+    'Install window confirmed with client contact',
     'IT contact identified',
-    'SIS credentials requested',
+    'Credentials requested',
   ],
   hardware_ready: [
-    'Serial numbers logged per school',
+    'Serial numbers logged per client',
     'Hardware staged and labeled',
     'Shipping label generated',
     'Tracking number recorded',
-    'Expected delivery date confirmed against install window',
+    'Expected delivery confirmed against install window',
   ],
   onsite_ready: [
-    'Delivery confirmed by school contact (not just carrier scan)',
-    'Network access confirmed by IT (ports open)',
-    'Mounting locations confirmed (power + placement)',
+    'Delivery confirmed by client contact (not just carrier)',
+    'Network access confirmed by IT — ports open',
+    'Mounting locations confirmed — power and placement',
     'Install date locked with on-site contact',
   ],
   installed: [
     'All readers showing online in dashboard',
-    'SIS sync confirmed and pulling correctly',
-    'Admin accounts created (principal + AP)',
+    'Sync confirmed and pulling correctly',
+    'Admin accounts created',
     'Test passes completed successfully',
     'Any hardware issues logged and flagged',
   ],
   live: [
     'Admin training completed',
-    'Teacher materials sent',
-    'School confirmed a test day before students arrive',
-    'Support contact info left with principal and IT',
+    'Staff materials sent',
+    'Client ran a test day before go-live',
+    'Support contact info left with primary and IT contact',
     'Go-live date recorded',
   ],
 };
@@ -114,7 +114,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's1',
     district: 'Northfield',
-    school: 'District Wide (4 schools)',
+    school: 'Account — 4 locations',
     installWeek: 'Jul 7',
     owner: 'Morgan',
     hardware: { kiosks: 8, readers: 24, handhelds: 12 },
@@ -125,7 +125,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's2',
     district: 'Blue Lake',
-    school: 'MS + HS',
+    school: 'Account — 2 locations',
     installWeek: 'Jul 14',
     owner: 'Jordan',
     hardware: { kiosks: 4, readers: 16, handhelds: 8 },
@@ -137,7 +137,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's3',
     district: 'Harborview',
-    school: 'District Wide (5 schools)',
+    school: 'Account — 5 locations',
     installWeek: 'Jul 7',
     owner: 'Taylor & Alex',
     hardware: { kiosks: 6, readers: 20, handhelds: 10 },
@@ -149,7 +149,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's4',
     district: 'Creekstone',
-    school: 'OWHS + MS',
+    school: 'Account — 2 locations',
     installWeek: 'Jul 21',
     owner: 'Casey',
     hardware: { kiosks: 3, readers: 12, handhelds: 6 },
@@ -160,7 +160,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's5',
     district: 'Lakewood',
-    school: 'District Wide (3 schools)',
+    school: 'Account — 3 locations',
     installWeek: 'Jun 30',
     owner: 'Morgan',
     hardware: { kiosks: 5, readers: 18, handhelds: 8 },
@@ -171,7 +171,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's6',
     district: 'Valley Ridge',
-    school: 'VRHS',
+    school: 'Account — 1 location',
     installWeek: 'Jun 30',
     owner: 'Jordan',
     hardware: { kiosks: 2, readers: 8, handhelds: 4 },
@@ -183,7 +183,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's7',
     district: 'Foxhill',
-    school: 'FHHS + FHMS',
+    school: 'Account — 2 locations',
     installWeek: 'Jun 23',
     owner: 'Taylor & Alex',
     hardware: { kiosks: 4, readers: 14, handhelds: 6 },
@@ -194,7 +194,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's8',
     district: 'Maple Creek',
-    school: 'District Wide (3 schools)',
+    school: 'Account — 3 locations',
     installWeek: 'Jun 23',
     owner: 'Morgan',
     hardware: { kiosks: 3, readers: 10, handhelds: 5 },
@@ -206,7 +206,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's9',
     district: 'Greenfield',
-    school: 'HS',
+    school: 'Account — 1 location',
     installWeek: 'Jun 16',
     owner: 'Casey',
     hardware: { kiosks: 2, readers: 8, handhelds: 4 },
@@ -217,7 +217,7 @@ export const deployments: SummerDeployment[] = [
   {
     id: 's10',
     district: 'Pinehurst',
-    school: 'HS + MS',
+    school: 'Account — 2 locations',
     installWeek: 'Jun 16',
     owner: 'Jordan',
     hardware: { kiosks: 3, readers: 12, handhelds: 6 },

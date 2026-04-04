@@ -128,7 +128,7 @@ export default function DeliveriesPage() {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search district, school, items..."
+              placeholder="Search client, site, items..."
               className="w-full bg-[#111113] border border-[#27272a] rounded-md pl-8 pr-3 py-2 text-sm text-[#d4d4d8] placeholder-[#3f3f46] focus:outline-none focus:border-[#22c55e]/60"
             />
           </div>
@@ -142,8 +142,8 @@ export default function DeliveriesPage() {
           <table className="w-full text-sm min-w-[900px]">
             <thead>
               <tr className="border-b border-[#27272a] bg-[#09090b]/40">
-                <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">District</th>
-                <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">School</th>
+                <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">Client</th>
+                <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">Site</th>
                 <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">Items</th>
                 <th className="text-left px-4 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">Quote #</th>
                 <th className="text-center px-3 py-2.5 text-[#52525b] font-medium text-xs uppercase tracking-wider">Assigned</th>

@@ -230,7 +230,7 @@ function DeployDrawer({ deployment: d, checkState, onToggle, onClose }: DrawerPr
               <p className="text-xs font-medium text-[#d4d4d8]">{d.itContact}</p>
             </div>
             <div className="bg-[#09090b] rounded-md px-3 py-2">
-              <p className="text-[10px] text-[#52525b] mb-0.5">Principal Contact</p>
+              <p className="text-[10px] text-[#52525b] mb-0.5">Primary Contact</p>
               <p className="text-xs font-medium text-[#d4d4d8]">{d.principalContact}</p>
             </div>
           </div>
@@ -421,7 +421,7 @@ export default function SummerPage() {
           <div>
             <h1 className="text-xl font-semibold text-white">Summer Deployments</h1>
             <p className="text-sm text-[#71717a] mt-0.5">
-              {stats.total} schools scheduled · {stats.live} live · {stats.atRisk > 0 ? `${stats.atRisk} flagged` : 'none flagged'}
+              {stats.total} accounts scheduled · {stats.live} live · {stats.atRisk > 0 ? `${stats.atRisk} flagged` : 'none flagged'}
             </p>
           </div>
 
@@ -447,7 +447,7 @@ export default function SummerPage() {
         {/* KPI strip */}
         <div className="grid grid-cols-4 gap-3 mb-6">
           <div className="bg-[#111113] border border-[#27272a] rounded-lg px-4 py-3">
-            <p className="text-xs text-[#52525b] mb-1">Total Schools</p>
+            <p className="text-xs text-[#52525b] mb-1">Total Accounts</p>
             <p className="text-2xl font-bold text-white tabular-nums">{stats.total}</p>
           </div>
           <div className="bg-[#111113] border border-[#27272a] rounded-lg px-4 py-3">

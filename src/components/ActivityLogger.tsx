@@ -107,13 +107,13 @@ export default function ActivityLogger({ open, onClose }: Props) {
 
             {/* District */}
             <div>
-              <label className="text-xs font-medium text-[#71717a] block mb-1.5">District *</label>
+              <label className="text-xs font-medium text-[#71717a] block mb-1.5">Client *</label>
               <select
                 value={districtId}
                 onChange={e => setDistrictId(e.target.value)}
                 className="w-full bg-[#0f0f10] border border-[#27272a] text-sm text-white rounded-lg px-3 py-2.5 outline-none focus:border-[#3f3f46]"
               >
-                <option value="">Select district…</option>
+                <option value="">Select client…</option>
                 {districts.map(d => (
                   <option key={d.id} value={d.id}>{d.name} — {d.stage}</option>
                 ))}
