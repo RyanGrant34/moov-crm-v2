@@ -206,13 +206,13 @@ ${notes ? '\nNotes: ' + notes : ''}`;
               <h2 className="text-sm font-semibold text-white mb-4">Quote Details</h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-xs text-[#71717a] mb-1.5">District</label>
+                  <label className="block text-xs text-[#71717a] mb-1.5">Client</label>
                   <select
                     value={districtId}
                     onChange={(e) => setDistrictId(e.target.value)}
                     className="w-full bg-[#09090b] border border-[#27272a] rounded-md px-3 py-2 text-sm text-[#d4d4d8] focus:outline-none focus:border-[#22c55e]/60"
                   >
-                    <option value="">Select district...</option>
+                    <option value="">Select client...</option>
                     {districts.map((d) => (
                       <option key={d.id} value={d.id}>
                         {d.name}
@@ -221,12 +221,12 @@ ${notes ? '\nNotes: ' + notes : ''}`;
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs text-[#71717a] mb-1.5">School / Site</label>
+                  <label className="block text-xs text-[#71717a] mb-1.5">Site</label>
                   <input
                     type="text"
                     value={schoolName}
                     onChange={(e) => setSchoolName(e.target.value)}
-                    placeholder="e.g. West Field High School"
+                    placeholder="e.g. Corp HQ, Site B, Regional Office"
                     className="w-full bg-[#09090b] border border-[#27272a] rounded-md px-3 py-2 text-sm text-[#d4d4d8] placeholder-[#3f3f46] focus:outline-none focus:border-[#22c55e]/60"
                   />
                 </div>

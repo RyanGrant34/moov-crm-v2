@@ -98,7 +98,7 @@ export default function PulsePage() {
             onChange={e => setDistrictFilter(e.target.value)}
             className="bg-[#111113] border border-[#27272a] text-[#a1a1aa] text-xs rounded-md px-2.5 py-2 outline-none cursor-pointer"
           >
-            <option value="all">All Districts</option>
+            <option value="all">All Clients</option>
             {districts.map(d => (
               <option key={d} value={d}>{d}</option>
             ))}

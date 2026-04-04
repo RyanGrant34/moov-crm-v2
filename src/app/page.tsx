@@ -185,7 +185,7 @@ export default function DashboardPage() {
             </div>
           </div>
           <p className="text-2xl font-bold text-white">{activeDeals}</p>
-          <p className="text-[#a1a1aa] text-xs mt-1">Active stage districts</p>
+          <p className="text-[#a1a1aa] text-xs mt-1">Active stage accounts</p>
         </Card>
 
         <Card className="bg-[#111113] border border-[#27272a] rounded-lg p-5">
@@ -242,15 +242,15 @@ export default function DashboardPage() {
       {/* ARR by District */}
       <Card className="bg-[#111113] border border-[#27272a] rounded-lg p-5">
         <div className="mb-4">
-          <h2 className="text-white font-semibold text-base">ARR by District</h2>
-          <p className="text-[#a1a1aa] text-xs mt-0.5">Top 10 districts by ARR 25-26</p>
+          <h2 className="text-white font-semibold text-base">ARR by Account</h2>
+          <p className="text-[#a1a1aa] text-xs mt-0.5">Top 10 accounts by ARR 25-26</p>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="text-[#71717a] text-xs uppercase tracking-wider">
-                <th className="text-left pb-3 pr-4 font-medium">District</th>
-                <th className="text-right pb-3 pr-4 font-medium">Students</th>
+                <th className="text-left pb-3 pr-4 font-medium">Account</th>
+                <th className="text-right pb-3 pr-4 font-medium">Users</th>
                 <th className="text-right pb-3 pr-4 font-medium">ARR 25-26</th>
                 <th className="text-right pb-3 pr-4 font-medium">ARR 26-27</th>
                 <th className="text-right pb-3 pr-4 font-medium">Growth</th>
@@ -341,7 +341,7 @@ export default function DashboardPage() {
         <Card className="bg-[#111113] border border-[#27272a] rounded-lg p-5">
           <div className="mb-5">
             <h2 className="text-white font-semibold text-base">Pipeline Status</h2>
-            <p className="text-[#a1a1aa] text-xs mt-0.5">Districts by stage</p>
+            <p className="text-[#a1a1aa] text-xs mt-0.5">Accounts by stage</p>
           </div>
           <div className="space-y-4">
             {stageCounts.map(({ stage, count }) => {
