@@ -15,35 +15,35 @@ export interface Product {
 
 export const products: Product[] = [
   // SOFTWARE
-  { id: 'license-standard', name: 'Standard License', sku: 'SW-001', category: 'software', billing: 'annual', unitPrice: 10, unit: 'per student/yr', description: 'Entry-level student access management — attendance, ID scanning, hall pass' },
-  { id: 'addon-classroom', name: 'Classroom Attendance Add-On', sku: 'SW-002', category: 'software', billing: 'annual', unitPrice: 0, unit: 'per student/yr', description: 'Classroom-level attendance tracking (included with full plan)' },
-  { id: 'vm-annual', name: 'Visitor Management Annual Fee', sku: 'SW-003', category: 'software', billing: 'annual', unitPrice: 2175, unit: 'per building/yr', description: 'Annual Visitor Management license per building' },
+  { id: 'license-standard', name: 'Core Platform License', sku: 'SW-001', category: 'software', billing: 'annual', unitPrice: 10, unit: 'per seat/yr', description: 'Entry-level platform access — access management, ID scanning, check-in workflows' },
+  { id: 'addon-classroom', name: 'Analytics Add-On', sku: 'SW-002', category: 'software', billing: 'annual', unitPrice: 0, unit: 'per seat/yr', description: 'Site-level analytics and reporting (included with full plan)' },
+  { id: 'vm-annual', name: 'Site Management Annual Fee', sku: 'SW-003', category: 'software', billing: 'annual', unitPrice: 2175, unit: 'per site/yr', description: 'Annual Site Management license per location' },
 
   // HARDWARE
-  { id: 'wifi-reader', name: 'WiFi Reader', sku: 'HW-001', category: 'hardware', billing: 'one_time', unitPrice: 100, unit: 'each', description: 'Wireless magic reader for hallways and classrooms' },
-  { id: 'poe-reader', name: 'PoE Reader', sku: 'HW-002', category: 'hardware', billing: 'one_time', unitPrice: 200, unit: 'each', description: 'Power-over-Ethernet reader for permanent installations' },
-  { id: 'kiosk', name: 'Kiosk Unit', sku: 'HW-003', category: 'hardware', billing: 'one_time', unitPrice: 1400, unit: 'each', description: 'Self-service student check-in kiosk with touchscreen' },
-  { id: 'handheld', name: 'Handheld Scanner', sku: 'HW-004', category: 'hardware', billing: 'one_time', unitPrice: 200, unit: 'each', description: 'Portable handheld for staff use in hallways and events' },
-  { id: 'id-card-station', name: 'ID Card Station', sku: 'HW-005', category: 'hardware', billing: 'one_time', unitPrice: 3725, unit: 'each', description: 'Full ID printing station (printer + software + setup)' },
-  { id: 'id-all', name: 'ID-ALL Unit', sku: 'HW-006', category: 'hardware', billing: 'one_time', unitPrice: 900, unit: 'each', description: 'All-in-one ID card reader and scanner unit' },
-  { id: 'late-pass-printer', name: 'Late Pass Printer', sku: 'HW-007', category: 'hardware', billing: 'one_time', unitPrice: 425, unit: 'each', description: 'Dedicated printer for printing late pass slips' },
-  { id: 'vm-setup', name: 'VM Hardware Installation', sku: 'HW-008', category: 'hardware', billing: 'one_time', unitPrice: 1500, unit: 'per install', description: 'On-site visitor management hardware installation' },
+  { id: 'wifi-reader', name: 'WiFi Scanner', sku: 'HW-001', category: 'hardware', billing: 'one_time', unitPrice: 100, unit: 'each', description: 'Wireless scanner for lobbies and entry points' },
+  { id: 'poe-reader', name: 'PoE Scanner', sku: 'HW-002', category: 'hardware', billing: 'one_time', unitPrice: 200, unit: 'each', description: 'Power-over-Ethernet scanner for permanent installations' },
+  { id: 'kiosk', name: 'Check-in Kiosk', sku: 'HW-003', category: 'hardware', billing: 'one_time', unitPrice: 1400, unit: 'each', description: 'Self-service check-in kiosk with touchscreen' },
+  { id: 'handheld', name: 'Handheld Device', sku: 'HW-004', category: 'hardware', billing: 'one_time', unitPrice: 200, unit: 'each', description: 'Portable handheld scanner for staff use in the field and at events' },
+  { id: 'id-card-station', name: 'Badge Station', sku: 'HW-005', category: 'hardware', billing: 'one_time', unitPrice: 3725, unit: 'each', description: 'Full badge printing station (printer + software + setup)' },
+  { id: 'id-all', name: 'All-in-One Unit', sku: 'HW-006', category: 'hardware', billing: 'one_time', unitPrice: 900, unit: 'each', description: 'All-in-one badge reader and scanner unit' },
+  { id: 'late-pass-printer', name: 'Receipt Printer', sku: 'HW-007', category: 'hardware', billing: 'one_time', unitPrice: 425, unit: 'each', description: 'Dedicated printer for printing visitor and access receipts' },
+  { id: 'vm-setup', name: 'Hardware Installation', sku: 'HW-008', category: 'hardware', billing: 'one_time', unitPrice: 1500, unit: 'per install', description: 'On-site hardware installation by our team' },
 
   // CONSUMABLES
-  { id: 'id-card', name: 'Student ID Card', sku: 'CON-001', category: 'consumables', billing: 'one_time', unitPrice: 2.55, unit: 'each', description: 'Printed student ID cards (full color, CR80)' },
-  { id: 'blank-card', name: 'Blank ID Card', sku: 'CON-002', category: 'consumables', billing: 'one_time', unitPrice: 0.35, unit: 'each', description: 'Blank white CR80 cards for on-site printing' },
-  { id: 'ribbon', name: 'Printer Ribbon', sku: 'CON-003', category: 'consumables', billing: 'one_time', unitPrice: 100, unit: 'each', description: 'Full-color YMCKO ribbon for ID card printers', note: 'First ribbon provided free' },
+  { id: 'id-card', name: 'Printed Badge', sku: 'CON-001', category: 'consumables', billing: 'one_time', unitPrice: 2.55, unit: 'each', description: 'Printed badge cards (full color, CR80)' },
+  { id: 'blank-card', name: 'Blank Badge Card', sku: 'CON-002', category: 'consumables', billing: 'one_time', unitPrice: 0.35, unit: 'each', description: 'Blank white CR80 cards for on-site printing' },
+  { id: 'ribbon', name: 'Printer Ribbon', sku: 'CON-003', category: 'consumables', billing: 'one_time', unitPrice: 100, unit: 'each', description: 'Full-color YMCKO ribbon for badge card printers', note: 'First ribbon provided free' },
   { id: 'cleaning-kit', name: 'Cleaning Kit', sku: 'CON-004', category: 'consumables', billing: 'one_time', unitPrice: 50, unit: 'each', description: 'Printer cleaning kit for maintenance', note: 'First kit provided free' },
-  { id: 'temp-id', name: 'Temporary ID', sku: 'CON-005', category: 'consumables', billing: 'free', unitPrice: 0, unit: 'each', description: 'Temporary paper ID passes', note: 'First 25 provided free' },
-  { id: 'sticker', name: 'Kiosk Sticker', sku: 'CON-006', category: 'consumables', billing: 'free', unitPrice: 0, unit: 'each', description: 'Branding and directional stickers for kiosk units' },
+  { id: 'temp-id', name: 'Temp Pass', sku: 'CON-005', category: 'consumables', billing: 'free', unitPrice: 0, unit: 'each', description: 'Temporary paper access passes', note: 'First 25 provided free' },
+  { id: 'sticker', name: 'Kiosk Decal', sku: 'CON-006', category: 'consumables', billing: 'free', unitPrice: 0, unit: 'each', description: 'Branding and directional decals for kiosk units' },
 
   // SERVICES
   { id: 'training', name: 'Training / Install', sku: 'SVC-001', category: 'services', billing: 'per_hour', unitPrice: 150, unit: 'per hour', description: 'On-site training and installation by our team' },
 
   // SUPPORT (Annual)
   { id: 'kiosk-support', name: 'Kiosk Annual Support & Insurance', sku: 'SUP-001', category: 'support', billing: 'annual', unitPrice: 1025, unit: 'per device/yr', description: 'Annual support, maintenance, insurance, replacements, OTA updates per kiosk' },
-  { id: 'hh-support', name: 'Handheld Annual Support & Insurance', sku: 'SUP-002', category: 'support', billing: 'annual', unitPrice: 100, unit: 'per device/yr', description: 'Annual support, maintenance, insurance per handheld' },
-  { id: 'mr-support', name: 'Magic Reader Annual Support', sku: 'SUP-003', category: 'support', billing: 'annual', unitPrice: 25, unit: 'per device/yr', description: 'Annual support, maintenance, insurance per reader' },
+  { id: 'hh-support', name: 'Handheld Annual Support & Insurance', sku: 'SUP-002', category: 'support', billing: 'annual', unitPrice: 100, unit: 'per device/yr', description: 'Annual support, maintenance, insurance per handheld device' },
+  { id: 'mr-support', name: 'Scanner Annual Support', sku: 'SUP-003', category: 'support', billing: 'annual', unitPrice: 25, unit: 'per device/yr', description: 'Annual support, maintenance, insurance per scanner' },
 ];
 
 export const categoryConfig: Record<ProductCategory, { label: string; color: string; bg: string }> = {

@@ -6,8 +6,8 @@ import { districts, totalValue, type District } from '@/lib/data';
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function getSource(d: District): string {
-  if (d.boces === 'ES') return 'es';
-  if (d.boces === 'NAS') return 'nas';
+  if (d.boces === 'Enterprise') return 'es';
+  if (d.boces === 'SMB') return 'nas';
   return 'ind';
 }
 

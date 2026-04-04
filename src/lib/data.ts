@@ -30,7 +30,7 @@ export interface District {
   arr2526?: number;
   arr2627?: number;
   oneTimeRevenue?: number;
-  boces?: 'ES' | 'NAS';
+  boces?: 'Enterprise' | 'SMB';
   hardware?: {
     kiosks?: number;
     handhelds?: number;
@@ -51,21 +51,21 @@ export interface Activity {
 export const districts: District[] = [
   {
     id: 'riverside',
-    name: 'Riverside',
+    name: 'Apex',
     stage: 'Active',
     state: 'CA',
     contact: 'Maria Lopez',
-    contactEmail: 'mlopez@riverside.k12.ca.us',
+    contactEmail: 'mlopez@apexsolutions.com',
     studentCount: 1500,
     arr2526: 10725,
     arr2627: 11261,
     oneTimeRevenue: 725,
-    boces: 'NAS',
+    boces: 'SMB',
     hardware: { handhelds: 100 },
     schools: [
       {
         code: 'RVJSHS',
-        name: 'Riverside Junior/Senior High School',
+        name: 'Apex Corp HQ',
         quotes: [
           {
             id: 'rv-q1',
@@ -81,7 +81,7 @@ export const districts: District[] = [
             id: 'rv-q2',
             quoteNum: '627961',
             price: 725,
-            items: '500 Student IDs $1.68ea',
+            items: '500 Badge Cards $1.68ea',
             quoteDate: '2025-11-05',
             poNum: '267026',
             poDate: '2025-11-20',
@@ -93,27 +93,27 @@ export const districts: District[] = [
   },
   {
     id: 'oakwood',
-    name: 'Oakwood',
+    name: 'Nexus',
     stage: 'Pending PO',
     state: 'FL',
     contact: 'James Whitfield',
-    contactEmail: 'jwhitfield@oakwood.edu',
+    contactEmail: 'jwhitfield@nexusgroup.com',
     studentCount: 2500,
     arr2526: 17563,
     arr2627: 18441,
     oneTimeRevenue: 32175,
-    boces: 'ES',
+    boces: 'Enterprise',
     hardware: { kiosks: 66, handhelds: 75 },
     schools: [
       {
         code: 'OWHS',
-        name: 'Oakwood High School',
+        name: 'Nexus Regional Office',
         quotes: [
           {
             id: 'ow-q1',
             quoteNum: '341813',
             price: 18900,
-            items: '21 Kiosk Units',
+            items: '21 Check-in Kiosk Units',
             quoteDate: '2025-08-14',
             poNum: null,
             poDate: null,
@@ -123,7 +123,7 @@ export const districts: District[] = [
             id: 'ow-q2',
             quoteNum: '978608',
             price: 44775,
-            items: '45 Kiosk Units, 2,500 Licenses',
+            items: '45 Check-in Kiosk Units, 2,500 Licenses',
             quoteDate: '2025-09-01',
             poNum: '26-40373',
             poDate: '2025-10-10',
@@ -133,7 +133,7 @@ export const districts: District[] = [
             id: 'ow-q3',
             quoteNum: '883279',
             price: 5250,
-            items: '750 Student IDs, 50 Mobile Readers',
+            items: '750 Badge Cards, 50 Mobile Readers',
             quoteDate: '2025-10-18',
             poNum: null,
             poDate: null,
@@ -143,7 +143,7 @@ export const districts: District[] = [
             id: 'ow-q4',
             quoteNum: '530335',
             price: 5275,
-            items: '750 Student IDs, 25 Mobile Readers',
+            items: '750 Badge Cards, 25 Mobile Readers',
             quoteDate: '2025-11-02',
             poNum: null,
             poDate: null,
@@ -155,11 +155,11 @@ export const districts: District[] = [
   },
   {
     id: 'maple-creek',
-    name: 'Maple Creek',
+    name: 'Crestline',
     stage: 'Active',
     state: 'OH',
     contact: 'Sandra Nguyen',
-    contactEmail: 'snguyen@maplecreek.edu',
+    contactEmail: 'snguyen@crestlinecorp.com',
     studentCount: 3180,
     arr2526: 22410,
     arr2627: 23531,
@@ -167,7 +167,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'MCHS',
-        name: 'Maple Creek High School',
+        name: 'Crestline Corp HQ',
         quotes: [
           {
             id: 'mc-q1',
@@ -183,7 +183,7 @@ export const districts: District[] = [
             id: 'mc-q2',
             quoteNum: '213905',
             price: 3200,
-            items: '400 Student IDs $8.00ea',
+            items: '400 Badge Cards $8.00ea',
             quoteDate: '2025-10-11',
             poNum: '25-81034',
             poDate: '2025-10-28',
@@ -193,7 +193,7 @@ export const districts: District[] = [
       },
       {
         code: 'MCMS',
-        name: 'Maple Creek Middle School',
+        name: 'Crestline West Office',
         quotes: [
           {
             id: 'mc-q3',
@@ -211,11 +211,11 @@ export const districts: District[] = [
   },
   {
     id: 'cedar-falls',
-    name: 'Cedar Falls',
+    name: 'Summit',
     stage: 'Active',
     state: 'IA',
     contact: 'Tom Burrell',
-    contactEmail: 'tburrell@cedarfalls.k12.ia.us',
+    contactEmail: 'tburrell@summittech.com',
     studentCount: 3200,
     arr2526: 22400,
     arr2627: 23520,
@@ -223,7 +223,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'CFHS',
-        name: 'Cedar Falls High School',
+        name: 'Summit Corp HQ',
         quotes: [
           {
             id: 'cf-q1',
@@ -239,7 +239,7 @@ export const districts: District[] = [
             id: 'cf-q2',
             quoteNum: '501234',
             price: 4800,
-            items: '600 Student IDs $8.00ea',
+            items: '600 Badge Cards $8.00ea',
             quoteDate: '2025-09-22',
             poNum: '26-14892',
             poDate: '2025-10-08',
@@ -251,11 +251,11 @@ export const districts: District[] = [
   },
   {
     id: 'blue-lake',
-    name: 'Blue Lake',
+    name: 'Vantage',
     stage: 'Active',
     state: 'MN',
     contact: 'Christine Park',
-    contactEmail: 'cpark@bluelake.edu',
+    contactEmail: 'cpark@vantageinc.com',
     studentCount: 2800,
     arr2526: 26600,
     arr2627: 27930,
@@ -264,13 +264,13 @@ export const districts: District[] = [
     schools: [
       {
         code: 'BLHS',
-        name: 'Blue Lake High School',
+        name: 'Vantage Corp HQ',
         quotes: [
           {
             id: 'bl-q1',
             quoteNum: '663920',
             price: 17500,
-            items: '10 Kiosk Units, 1,500 Licenses',
+            items: '10 Check-in Kiosk Units, 1,500 Licenses',
             quoteDate: '2025-08-05',
             poNum: '26-22310',
             poDate: '2025-08-22',
@@ -280,7 +280,7 @@ export const districts: District[] = [
       },
       {
         code: 'BLMS',
-        name: 'Blue Lake Middle School',
+        name: 'Vantage North Office',
         quotes: [
           {
             id: 'bl-q2',
@@ -296,7 +296,7 @@ export const districts: District[] = [
             id: 'bl-q3',
             quoteNum: '745219',
             price: 2400,
-            items: '300 Student IDs $8.00ea',
+            items: '300 Badge Cards $8.00ea',
             quoteDate: '2025-11-01',
             poNum: '26-30012',
             poDate: '2025-11-18',
@@ -312,7 +312,7 @@ export const districts: District[] = [
     stage: 'Active',
     state: 'NC',
     contact: 'David Flores',
-    contactEmail: 'dflores@pinehurst.edu',
+    contactEmail: 'dflores@pinehurstco.com',
     studentCount: 4500,
     arr2526: 31500,
     arr2627: 33075,
@@ -320,7 +320,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'PHHS',
-        name: 'Pinehurst High School',
+        name: 'Pinehurst Corp HQ',
         quotes: [
           {
             id: 'ph-q1',
@@ -336,7 +336,7 @@ export const districts: District[] = [
             id: 'ph-q2',
             quoteNum: '864722',
             price: 5600,
-            items: '700 Student IDs $8.00ea',
+            items: '700 Badge Cards $8.00ea',
             quoteDate: '2025-10-07',
             poNum: '26-60913',
             poDate: '2025-10-24',
@@ -348,20 +348,20 @@ export const districts: District[] = [
   },
   {
     id: 'elmwood',
-    name: 'Elmwood',
+    name: 'Ironwood',
     stage: 'At Risk',
     state: 'TX',
     contact: 'Rebecca Torres',
-    contactEmail: 'rtorres@elmwood.k12.tx.us',
+    contactEmail: 'rtorres@ironwoodtech.com',
     studentCount: 1030,
     arr2526: 7210,
     arr2627: 7571,
     oneTimeRevenue: 0,
-    boces: 'NAS',
+    boces: 'SMB',
     schools: [
       {
         code: 'EMHS',
-        name: 'Elmwood High School',
+        name: 'Ironwood Corp HQ',
         quotes: [
           {
             id: 'em-q1',
@@ -379,11 +379,11 @@ export const districts: District[] = [
   },
   {
     id: 'sycamore-hills',
-    name: 'Sycamore Hills',
+    name: 'Lakewood',
     stage: 'Active',
     state: 'IL',
     contact: 'Nathan Reed',
-    contactEmail: 'nreed@sycamorehills.edu',
+    contactEmail: 'nreed@lakewoodcorp.com',
     studentCount: 4400,
     arr2526: 30800,
     arr2627: 32340,
@@ -392,7 +392,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'SHHS',
-        name: 'Sycamore Hills High School',
+        name: 'Lakewood Corp HQ',
         quotes: [
           {
             id: 'sh-q1',
@@ -408,7 +408,7 @@ export const districts: District[] = [
             id: 'sh-q2',
             quoteNum: '961247',
             price: 8800,
-            items: '8 Kiosk Units',
+            items: '8 Check-in Kiosk Units',
             quoteDate: '2025-09-18',
             poNum: '26-48002',
             poDate: '2025-10-05',
@@ -418,7 +418,7 @@ export const districts: District[] = [
       },
       {
         code: 'SHMS',
-        name: 'Sycamore Hills Middle School',
+        name: 'Lakewood West Office',
         quotes: [
           {
             id: 'sh-q3',
@@ -436,11 +436,11 @@ export const districts: District[] = [
   },
   {
     id: 'forest-glen',
-    name: 'Forest Glen',
+    name: 'Clearwater',
     stage: 'Active',
     state: 'WI',
     contact: 'Amy Hartmann',
-    contactEmail: 'ahartmann@forestglen.edu',
+    contactEmail: 'ahartmann@clearwaterco.com',
     studentCount: 1800,
     arr2526: 12600,
     arr2627: 13230,
@@ -449,7 +449,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'FGHS',
-        name: 'Forest Glen High School',
+        name: 'Clearwater Corp HQ',
         quotes: [
           {
             id: 'fg-q1',
@@ -465,7 +465,7 @@ export const districts: District[] = [
             id: 'fg-q2',
             quoteNum: '328019',
             price: 4400,
-            items: '4 Kiosk Units, 200 Student IDs',
+            items: '4 Check-in Kiosk Units, 200 Badge Cards',
             quoteDate: '2025-11-08',
             poNum: '26-39845',
             poDate: '2025-11-25',
@@ -481,7 +481,7 @@ export const districts: District[] = [
     stage: 'Active',
     state: 'WA',
     contact: 'Kevin Marsh',
-    contactEmail: 'kmarsh@harborview.k12.wa.us',
+    contactEmail: 'kmarsh@harborviewinc.com',
     studentCount: 6100,
     arr2526: 42700,
     arr2627: 44835,
@@ -489,7 +489,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'HVHS',
-        name: 'Harborview High School',
+        name: 'Harborview Corp HQ',
         quotes: [
           {
             id: 'hv-q1',
@@ -505,7 +505,7 @@ export const districts: District[] = [
             id: 'hv-q2',
             quoteNum: '439281',
             price: 6400,
-            items: '800 Student IDs $8.00ea',
+            items: '800 Badge Cards $8.00ea',
             quoteDate: '2025-10-02',
             poNum: '26-75901',
             poDate: '2025-10-19',
@@ -515,7 +515,7 @@ export const districts: District[] = [
       },
       {
         code: 'HVMS',
-        name: 'Harborview Middle School',
+        name: 'Harborview South Office',
         quotes: [
           {
             id: 'hv-q3',
@@ -533,11 +533,11 @@ export const districts: District[] = [
   },
   {
     id: 'willowbrook',
-    name: 'Willowbrook',
+    name: 'Sunrise',
     stage: 'Pending PO',
     state: 'NJ',
     contact: 'Diana Calloway',
-    contactEmail: 'dcalloway@willowbrook.edu',
+    contactEmail: 'dcalloway@sunrisesolutions.com',
     studentCount: 3100,
     arr2526: 22100,
     arr2627: 23205,
@@ -545,7 +545,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'WBHS',
-        name: 'Willowbrook High School',
+        name: 'Sunrise Corp HQ',
         quotes: [
           {
             id: 'wb-q1',
@@ -563,11 +563,11 @@ export const districts: District[] = [
   },
   {
     id: 'valley-ridge',
-    name: 'Valley Ridge',
+    name: 'Vantage Ridge',
     stage: 'Active',
     state: 'CO',
     contact: 'Eric Sandoval',
-    contactEmail: 'esandoval@valleyridge.edu',
+    contactEmail: 'esandoval@vantageridge.com',
     studentCount: 3000,
     arr2526: 21000,
     arr2627: 22050,
@@ -575,7 +575,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'VRHS',
-        name: 'Valley Ridge High School',
+        name: 'Vantage Ridge Corp HQ',
         quotes: [
           {
             id: 'vr-q1',
@@ -591,7 +591,7 @@ export const districts: District[] = [
             id: 'vr-q2',
             quoteNum: '574901',
             price: 4000,
-            items: '500 Student IDs $8.00ea',
+            items: '500 Badge Cards $8.00ea',
             quoteDate: '2025-10-14',
             poNum: '26-22013',
             poDate: '2025-10-31',
@@ -603,11 +603,11 @@ export const districts: District[] = [
   },
   {
     id: 'birchwood',
-    name: 'Birchwood',
+    name: 'Ironwood East',
     stage: 'Active',
     state: 'MI',
     contact: 'Laura Kim',
-    contactEmail: 'lkim@birchwood.k12.mi.us',
+    contactEmail: 'lkim@ironwoodeast.com',
     studentCount: 3800,
     arr2526: 26600,
     arr2627: 27930,
@@ -615,7 +615,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'BWHS',
-        name: 'Birchwood High School',
+        name: 'Ironwood East Corp HQ',
         quotes: [
           {
             id: 'bw-q1',
@@ -631,7 +631,7 @@ export const districts: District[] = [
       },
       {
         code: 'BWMS',
-        name: 'Birchwood Middle School',
+        name: 'Ironwood East Regional Office',
         quotes: [
           {
             id: 'bw-q2',
@@ -647,7 +647,7 @@ export const districts: District[] = [
             id: 'bw-q3',
             quoteNum: '738501',
             price: 3200,
-            items: '400 Student IDs $8.00ea',
+            items: '400 Badge Cards $8.00ea',
             quoteDate: '2025-11-10',
             poNum: '26-35780',
             poDate: '2025-11-27',
@@ -659,11 +659,11 @@ export const districts: District[] = [
   },
   {
     id: 'north-riverside',
-    name: 'North Riverside',
+    name: 'Apex North',
     stage: 'Active',
     state: 'CA',
     contact: 'Brian Santos',
-    contactEmail: 'bsantos@northriverside.edu',
+    contactEmail: 'bsantos@apexnorth.com',
     studentCount: 3500,
     arr2526: 24500,
     arr2627: 25725,
@@ -671,7 +671,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'NRHS',
-        name: 'North Riverside High School',
+        name: 'Apex North Corp HQ',
         quotes: [
           {
             id: 'nr-q1',
@@ -687,7 +687,7 @@ export const districts: District[] = [
             id: 'nr-q2',
             quoteNum: '849073',
             price: 5600,
-            items: '700 Student IDs $8.00ea',
+            items: '700 Badge Cards $8.00ea',
             quoteDate: '2025-09-29',
             poNum: '26-62980',
             poDate: '2025-10-16',
@@ -699,11 +699,11 @@ export const districts: District[] = [
   },
   {
     id: 'lakeside',
-    name: 'Lakeside',
+    name: 'Lakewood South',
     stage: 'Active',
     state: 'GA',
     contact: 'Monica Webb',
-    contactEmail: 'mwebb@lakeside.k12.ga.us',
+    contactEmail: 'mwebb@lakewoodsouth.com',
     studentCount: 2600,
     arr2526: 18200,
     arr2627: 19110,
@@ -712,7 +712,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'LSHS',
-        name: 'Lakeside High School',
+        name: 'Lakewood South Corp HQ',
         quotes: [
           {
             id: 'ls-q1',
@@ -728,7 +728,7 @@ export const districts: District[] = [
             id: 'ls-q2',
             quoteNum: '928405',
             price: 8800,
-            items: '8 Kiosk Units, 200 Student IDs',
+            items: '8 Check-in Kiosk Units, 200 Badge Cards',
             quoteDate: '2025-10-20',
             poNum: '26-45670',
             poDate: '2025-11-06',
@@ -740,11 +740,11 @@ export const districts: District[] = [
   },
   {
     id: 'coral-cove',
-    name: 'Coral Cove',
+    name: 'Nexus South',
     stage: 'Active',
     state: 'FL',
     contact: 'Stacy Ortega',
-    contactEmail: 'sortega@coralcove.edu',
+    contactEmail: 'sortega@nexussouth.com',
     studentCount: 1900,
     arr2526: 13300,
     arr2627: 13965,
@@ -752,7 +752,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'CCHS',
-        name: 'Coral Cove High School',
+        name: 'Nexus South Corp HQ',
         quotes: [
           {
             id: 'cc-q1',
@@ -768,7 +768,7 @@ export const districts: District[] = [
             id: 'cc-q2',
             quoteNum: '167294',
             price: 4800,
-            items: '600 Student IDs $8.00ea',
+            items: '600 Badge Cards $8.00ea',
             quoteDate: '2025-11-04',
             poNum: '26-15890',
             poDate: '2025-11-21',
@@ -780,11 +780,11 @@ export const districts: District[] = [
   },
   {
     id: 'stonegate',
-    name: 'Stonegate',
+    name: 'Summit West',
     stage: 'Active',
     state: 'AZ',
     contact: 'Chris Navarro',
-    contactEmail: 'cnavarro@stonegate.edu',
+    contactEmail: 'cnavarro@summitwest.com',
     studentCount: 5500,
     arr2526: 38500,
     arr2627: 40425,
@@ -792,7 +792,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'SGHS',
-        name: 'Stonegate High School',
+        name: 'Summit West Corp HQ',
         quotes: [
           {
             id: 'sg-q1',
@@ -808,7 +808,7 @@ export const districts: District[] = [
             id: 'sg-q2',
             quoteNum: '278910',
             price: 5200,
-            items: '650 Student IDs $8.00ea',
+            items: '650 Badge Cards $8.00ea',
             quoteDate: '2025-10-25',
             poNum: '26-32450',
             poDate: '2025-11-11',
@@ -818,7 +818,7 @@ export const districts: District[] = [
       },
       {
         code: 'SGMS',
-        name: 'Stonegate Middle School',
+        name: 'Summit West Regional Office',
         quotes: [
           {
             id: 'sg-q3',
@@ -836,11 +836,11 @@ export const districts: District[] = [
   },
   {
     id: 'clearwater',
-    name: 'Clearwater',
+    name: 'Clearwater Bay',
     stage: 'Active',
     state: 'FL',
     contact: 'Tanya Brooks',
-    contactEmail: 'tbrooks@clearwater.k12.fl.us',
+    contactEmail: 'tbrooks@clearwaterbay.com',
     studentCount: 5000,
     arr2526: 35000,
     arr2627: 36750,
@@ -848,7 +848,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'CWHS',
-        name: 'Clearwater High School',
+        name: 'Clearwater Bay Corp HQ',
         quotes: [
           {
             id: 'cw-q1',
@@ -864,7 +864,7 @@ export const districts: District[] = [
             id: 'cw-q2',
             quoteNum: '508734',
             price: 7200,
-            items: '900 Student IDs $8.00ea',
+            items: '900 Badge Cards $8.00ea',
             quoteDate: '2025-09-06',
             poNum: '26-86230',
             poDate: '2025-09-23',
@@ -876,26 +876,26 @@ export const districts: District[] = [
   },
   {
     id: 'sunrise-academy',
-    name: 'Sunrise Academy',
+    name: 'Sunrise',
     stage: 'At Risk',
     state: 'NV',
     contact: 'Paul Decker',
-    contactEmail: 'pdecker@sunriseacademy.edu',
+    contactEmail: 'pdecker@sunrisevg.com',
     studentCount: 100,
     arr2526: 0,
     arr2627: 850,
     oneTimeRevenue: 850,
-    boces: 'NAS',
+    boces: 'SMB',
     schools: [
       {
         code: 'SunAcad',
-        name: 'Sunrise Academy Charter School',
+        name: 'Sunrise Ventures Group',
         quotes: [
           {
             id: 'sa-q1',
             quoteNum: '943299',
             price: 850,
-            items: '100 Student IDs $8.50ea',
+            items: '100 Badge Cards $8.50ea',
             quoteDate: '2025-11-14',
             poNum: null,
             poDate: null,
@@ -907,11 +907,11 @@ export const districts: District[] = [
   },
   {
     id: 'foxhill',
-    name: 'Foxhill',
+    name: 'Crestline East',
     stage: 'Pending PO',
     state: 'PA',
     contact: 'Gretchen Holt',
-    contactEmail: 'gholt@foxhill.edu',
+    contactEmail: 'gholt@crestlineeast.com',
     studentCount: 2000,
     arr2526: 14260,
     arr2627: 14973,
@@ -920,7 +920,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'FHHS',
-        name: 'Foxhill High School',
+        name: 'Crestline East Corp HQ',
         quotes: [
           {
             id: 'fh-q1',
@@ -936,7 +936,7 @@ export const districts: District[] = [
             id: 'fh-q2',
             quoteNum: '559940',
             price: 9025,
-            items: '140 PoE Readers',
+            items: '140 PoE Scanners',
             quoteDate: '2025-11-20',
             poNum: null,
             poDate: null,
@@ -948,11 +948,11 @@ export const districts: District[] = [
   },
   {
     id: 'meadowbrook',
-    name: 'Meadowbrook',
+    name: 'Bay State',
     stage: 'Active',
     state: 'OH',
     contact: 'Justin Pierce',
-    contactEmail: 'jpierce@meadowbrook.k12.oh.us',
+    contactEmail: 'jpierce@baystateco.com',
     studentCount: 4100,
     arr2526: 28700,
     arr2627: 30135,
@@ -960,7 +960,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'MBHS',
-        name: 'Meadowbrook High School',
+        name: 'Bay State Corp HQ',
         quotes: [
           {
             id: 'mb-q1',
@@ -976,7 +976,7 @@ export const districts: District[] = [
             id: 'mb-q2',
             quoteNum: '639104',
             price: 6400,
-            items: '800 Student IDs $8.00ea',
+            items: '800 Badge Cards $8.00ea',
             quoteDate: '2025-10-16',
             poNum: '26-28904',
             poDate: '2025-11-02',
@@ -986,7 +986,7 @@ export const districts: District[] = [
       },
       {
         code: 'MBMS',
-        name: 'Meadowbrook Middle School',
+        name: 'Bay State Regional Office',
         quotes: [
           {
             id: 'mb-q3',
@@ -1008,7 +1008,7 @@ export const districts: District[] = [
     stage: 'Pending PO',
     state: 'FL',
     contact: 'Angela Moore',
-    contactEmail: 'amoore@suncoast.edu',
+    contactEmail: 'amoore@suncoastgroup.com',
     studentCount: 1450,
     arr2526: 10175,
     arr2627: 10684,
@@ -1016,7 +1016,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'SCA',
-        name: 'Suncoast Academy',
+        name: 'Suncoast Group HQ',
         quotes: [
           {
             id: 'sc-q1',
@@ -1032,13 +1032,13 @@ export const districts: District[] = [
       },
       {
         code: 'BCA',
-        name: 'Bay Coast Academy',
+        name: 'Suncoast Bay Office',
         quotes: [
           {
             id: 'sc-q2',
             quoteNum: '328996',
             price: 1875,
-            items: '250 Student IDs $7.50ea',
+            items: '250 Badge Cards $7.50ea',
             quoteDate: '2025-10-25',
             poNum: null,
             poDate: null,
@@ -1050,26 +1050,26 @@ export const districts: District[] = [
   },
   {
     id: 'bay-state',
-    name: 'Bay State',
+    name: 'Bay State Ventures',
     stage: 'New',
     state: 'MA',
     contact: 'Richard Chen',
-    contactEmail: 'rchen@baystate.k12.ma.us',
+    contactEmail: 'rchen@baystatevg.com',
     studentCount: 75,
     arr2526: 0,
     arr2627: 675,
     oneTimeRevenue: 675,
-    boces: 'ES',
+    boces: 'Enterprise',
     schools: [
       {
         code: 'HTVTHS',
-        name: 'Bay State High Tech Vocational School',
+        name: 'Bay State Ventures HQ',
         quotes: [
           {
             id: 'bs-q1',
             quoteNum: '643516',
             price: 675,
-            items: '75 Student IDs $9.00ea',
+            items: '75 Badge Cards $9.00ea',
             quoteDate: '2025-11-18',
             poNum: null,
             poDate: null,
@@ -1085,7 +1085,7 @@ export const districts: District[] = [
     stage: 'Pending PO',
     state: 'TX',
     contact: 'Carlos Vega',
-    contactEmail: 'cvega@lonestar.edu',
+    contactEmail: 'cvega@lonestartech.com',
     studentCount: 1250,
     arr2526: 8910,
     arr2627: 9356,
@@ -1094,7 +1094,7 @@ export const districts: District[] = [
     schools: [
       {
         code: 'LPA',
-        name: 'Lone Star Preparatory Academy',
+        name: 'Lone Star Tech HQ',
         quotes: [
           {
             id: 'ls2-q1',
@@ -1116,7 +1116,7 @@ export const activities: Activity[] = [
   {
     id: 'act-1',
     type: 'po_received',
-    district: 'Foxhill',
+    district: 'Crestline East',
     description: 'PO 26-89488 received for 2,000 Licenses — Q 403630 closed.',
     date: '2025-10-15',
     amount: 14260,
@@ -1125,14 +1125,14 @@ export const activities: Activity[] = [
     id: 'act-2',
     type: 'quote_sent',
     district: 'Lone Star',
-    description: 'Sent Q 792052 ($11,225) to Carlos Vega at Lone Star Prep.',
+    description: 'Sent Q 792052 ($11,225) to Carlos Vega at Lone Star Tech.',
     date: '2025-11-05',
     amount: 11225,
   },
   {
     id: 'act-3',
     type: 'follow_up',
-    district: 'Willowbrook',
+    district: 'Sunrise',
     description: 'Followed up with Diana Calloway on Q 809415 ($34,875) — no PO yet.',
     date: '2025-11-12',
     amount: 34875,
@@ -1140,15 +1140,15 @@ export const activities: Activity[] = [
   {
     id: 'act-4',
     type: 'quote_sent',
-    district: 'Foxhill',
-    description: 'Sent Q 559940 ($9,025) for 140 PoE Readers.',
+    district: 'Crestline East',
+    description: 'Sent Q 559940 ($9,025) for 140 PoE Scanners.',
     date: '2025-11-20',
     amount: 9025,
   },
   {
     id: 'act-5',
     type: 'meeting',
-    district: 'Bay State',
+    district: 'Bay State Ventures',
     description: 'Intro call with Richard Chen — small pilot opportunity, Q 643516 sent.',
     date: '2025-11-18',
   },
@@ -1156,14 +1156,14 @@ export const activities: Activity[] = [
     id: 'act-6',
     type: 'quote_sent',
     district: 'Suncoast',
-    description: 'Sent Q 278009 ($10,175) to Suncoast Academy and Q 328996 ($1,875) to Bay Coast Academy.',
+    description: 'Sent Q 278009 ($10,175) to Suncoast Group HQ and Q 328996 ($1,875) to Suncoast Bay Office.',
     date: '2025-10-25',
     amount: 12050,
   },
   {
     id: 'act-7',
     type: 'follow_up',
-    district: 'Elmwood',
+    district: 'Ironwood',
     description: 'Second follow-up on Q 227406 ($3,950) — Rebecca Torres unresponsive.',
     date: '2025-11-22',
     amount: 3950,
@@ -1171,8 +1171,8 @@ export const activities: Activity[] = [
   {
     id: 'act-8',
     type: 'po_received',
-    district: 'Clearwater',
-    description: 'PO 26-86230 received for 900 IDs — Q 508734 closed.',
+    district: 'Clearwater Bay',
+    description: 'PO 26-86230 received for 900 Badge Cards — Q 508734 closed.',
     date: '2025-09-23',
     amount: 7200,
   },
@@ -1180,14 +1180,14 @@ export const activities: Activity[] = [
     id: 'act-9',
     type: 'install',
     district: 'Harborview',
-    description: 'On-site install completed at Harborview HS — 4,000 licenses activated.',
+    description: 'On-site install completed at Harborview Corp HQ — 4,000 licenses activated.',
     date: '2025-08-20',
     amount: 28000,
   },
   {
     id: 'act-10',
     type: 'follow_up',
-    district: 'Sunrise Academy',
+    district: 'Sunrise',
     description: 'Sent pricing reminder on Q 943299 ($850) — deal at risk.',
     date: '2025-11-25',
     amount: 850,
@@ -1195,7 +1195,7 @@ export const activities: Activity[] = [
   {
     id: 'act-11',
     type: 'meeting',
-    district: 'Oakwood',
+    district: 'Nexus',
     description: 'Budget review call with James Whitfield — 3 quotes still pending PO.',
     date: '2025-11-19',
     amount: 29425,
@@ -1203,7 +1203,7 @@ export const activities: Activity[] = [
   {
     id: 'act-12',
     type: 'po_received',
-    district: 'Oakwood',
+    district: 'Nexus',
     description: 'PO 26-40373 received for Q 978608 ($44,775).',
     date: '2025-10-10',
     amount: 44775,
@@ -1247,7 +1247,7 @@ export function stageColor(stage: Stage): string {
   }
 }
 
-// Lat/lng for deal heatmap — approximate district locations by state
+// Lat/lng for deal heatmap — approximate account locations by state
 export const districtCoords: Record<string, [number, number]> = {
   'riverside':        [33.98, -117.37],
   'oakwood':          [29.19, -82.13],

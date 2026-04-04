@@ -11,15 +11,15 @@ export const emailTemplates: EmailTemplate[] = [
   {
     id: 'intro',
     name: 'Intro / Cold Outreach',
-    scenario: 'First contact with a new district admin',
-    subject: 'Modernizing Student ID + Attendance at {{District Name}}',
+    scenario: 'First contact with a new account admin',
+    subject: 'Modernizing Access Management + Check-in at {{Account Name}}',
     body: `Hi {{First Name}},
 
-I work with an EdTech platform — we help K-12 districts replace manual sign-in sheets and paper IDs with a seamless digital system (kiosks, mobile readers, and smart ID cards).
+I work with a B2B SaaS platform — we help companies replace manual sign-in sheets and paper badges with a seamless digital system (check-in kiosks, mobile scanners, and smart badge cards).
 
-A few districts near you — including {{Nearby District}} — went live with us this fall and cut attendance admin time by about 40%.
+A few clients near you — including {{Nearby Account}} — went live with us this quarter and cut operations admin time by about 40%.
 
-Would a 15-minute call this week make sense? I can walk you through exactly how it works and what the setup looks like for a district your size.
+Would a 15-minute call this week make sense? I can walk you through exactly how it works and what the setup looks like for an organization your size.
 
 Ryan Grant
 Customer Success & Marketing
@@ -30,7 +30,7 @@ Customer Success & Marketing
     id: 'follow-up-no-response',
     name: 'Follow-up (No Response)',
     scenario: 'No reply after initial outreach or quote',
-    subject: 'Re: {{District Name}} — Quick check-in',
+    subject: 'Re: {{Account Name}} — Quick check-in',
     body: `Hi {{First Name}},
 
 Following up on my last note. I know things get busy — just wanted to make sure this landed.
@@ -60,18 +60,18 @@ Ryan`,
   {
     id: 'post-install',
     name: 'Post-Install Check-in',
-    scenario: 'After system goes live at the district',
-    subject: '{{District Name}} is live — how\'s it going?',
+    scenario: 'After system goes live at the account',
+    subject: '{{Account Name}} is live — how\'s it going?',
     body: `Hi {{First Name}},
 
 It's been a couple weeks since your platform went live — wanted to check in and see how things are running.
 
 A few things I'd love to get your take on:
-- How's the scan-in experience at the kiosks?
-- Any questions from staff or students we can help with?
+- How's the check-in experience at the kiosks?
+- Any questions from staff or users we can help with?
 - Anything you'd want to add or expand?
 
-Also — if the team is happy with the results, a quick review or a referral to another district would mean a lot to us.
+Also — if the team is happy with the results, a quick review or a referral to another account would mean a lot to us.
 
 Talk soon,
 Ryan`,
@@ -81,17 +81,17 @@ Ryan`,
     id: 'renewal',
     name: 'Renewal / Annual Expansion',
     scenario: 'Existing customer approaching renewal or expansion opportunity',
-    subject: 'Renewing {{District Name}} for next year — let\'s plan ahead',
+    subject: 'Renewing {{Account Name}} for next year — let\'s plan ahead',
     body: `Hi {{First Name}},
 
 Your current contract is coming up, and I wanted to get ahead of the renewal before the budget cycle closes.
 
 A few things worth talking through:
-- Any schools or grade levels you'd want to expand to next year?
-- Any new features (hall passes, visitor check-in, parent alerts) worth adding?
-- Are there neighboring districts you've mentioned us to?
+- Any sites or departments you'd want to expand to next year?
+- Any new features (access management, visitor tracking, automated alerts) worth adding?
+- Are there neighboring accounts you've mentioned us to?
 
-I can put together an updated quote that reflects current enrollment numbers — usually takes me less than 24 hours.
+I can put together an updated quote that reflects current seat counts — usually takes me less than 24 hours.
 
 Ryan`,
     tags: ['renewal', 'upsell', 'retention'],
@@ -99,31 +99,31 @@ Ryan`,
   {
     id: 'budget-unlock',
     name: 'Budget Signal Response',
-    scenario: 'District just got funding approved or E-Rate allocation',
-    subject: '{{District Name}} funding — good timing to revisit the platform',
+    scenario: 'Account just got funding approved or budget allocation',
+    subject: '{{Account Name}} funding — good timing to revisit the platform',
     body: `Hi {{First Name}},
 
 Congrats on the recent {{Budget Type}} approval — that's a big win.
 
 I wanted to reach out because some of what we offer falls squarely in that category. Specifically, {{Relevant Product}} is exactly the kind of purchase this funding is designed for.
 
-We've helped several districts move quickly on this — sometimes as fast as 2-3 weeks from PO to go-live.
+We've helped several accounts move quickly on this — sometimes as fast as 2-3 weeks from PO to go-live.
 
 Worth a quick call to see if the timing works?
 
 Ryan`,
-    tags: ['budget', 'E-Rate', 'timing'],
+    tags: ['budget', 'funding', 'timing'],
   },
   {
     id: 'compliance-urgency',
     name: 'Compliance Deadline',
-    scenario: 'State/federal mandate creating urgency to adopt',
+    scenario: 'Regulatory mandate creating urgency to adopt',
     subject: '{{State}} compliance deadline — Platform can get you there',
     body: `Hi {{First Name}},
 
-I wanted to flag something that might be relevant to your planning — {{State}} is requiring digital student tracking logs by {{Deadline}}.
+I wanted to flag something that might be relevant to your planning — {{State}} is requiring digital access tracking logs by {{Deadline}}.
 
-The platform covers this completely out of the box — your sign-in data is automatically logged, timestamped, and exportable for audits. We've already helped several FL districts get compliant well ahead of the deadline.
+The platform covers this completely out of the box — your check-in data is automatically logged, timestamped, and exportable for audits. We've already helped several accounts get compliant well ahead of the deadline.
 
 We can typically go live in 3 weeks from a signed PO. Would it help to see exactly what the compliance report looks like?
 
