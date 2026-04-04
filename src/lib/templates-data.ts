@@ -15,15 +15,15 @@ export const emailTemplates: EmailTemplate[] = [
     subject: 'Modernizing Student ID + Attendance at {{District Name}}',
     body: `Hi {{First Name}},
 
-I work with MOOV — we help K-12 districts replace manual sign-in sheets and paper IDs with a seamless digital system (kiosks, mobile readers, and smart ID cards).
+I work with an EdTech platform — we help K-12 districts replace manual sign-in sheets and paper IDs with a seamless digital system (kiosks, mobile readers, and smart ID cards).
 
 A few districts near you — including {{Nearby District}} — went live with us this fall and cut attendance admin time by about 40%.
 
 Would a 15-minute call this week make sense? I can walk you through exactly how it works and what the setup looks like for a district your size.
 
 Ryan Grant
-Customer Success & Marketing, MOOV
-joinmoov.com`,
+Customer Success & Marketing
+`,
     tags: ['cold', 'intro', 'new lead'],
   },
   {
@@ -64,7 +64,7 @@ Ryan`,
     subject: '{{District Name}} is live — how\'s it going?',
     body: `Hi {{First Name}},
 
-It's been a couple weeks since your MOOV system went live — wanted to check in and see how things are running.
+It's been a couple weeks since your platform went live — wanted to check in and see how things are running.
 
 A few things I'd love to get your take on:
 - How's the scan-in experience at the kiosks?
@@ -84,7 +84,7 @@ Ryan`,
     subject: 'Renewing {{District Name}} for next year — let\'s plan ahead',
     body: `Hi {{First Name}},
 
-Your current MOOV contract is coming up, and I wanted to get ahead of the renewal before the budget cycle closes.
+Your current contract is coming up, and I wanted to get ahead of the renewal before the budget cycle closes.
 
 A few things worth talking through:
 - Any schools or grade levels you'd want to expand to next year?
@@ -100,12 +100,12 @@ Ryan`,
     id: 'budget-unlock',
     name: 'Budget Signal Response',
     scenario: 'District just got funding approved or E-Rate allocation',
-    subject: '{{District Name}} funding — good timing to revisit MOOV',
+    subject: '{{District Name}} funding — good timing to revisit the platform',
     body: `Hi {{First Name}},
 
 Congrats on the recent {{Budget Type}} approval — that's a big win.
 
-I wanted to reach out because some of what we offer at MOOV falls squarely in that category. Specifically, {{Relevant Product}} is exactly the kind of purchase this funding is designed for.
+I wanted to reach out because some of what we offer falls squarely in that category. Specifically, {{Relevant Product}} is exactly the kind of purchase this funding is designed for.
 
 We've helped several districts move quickly on this — sometimes as fast as 2-3 weeks from PO to go-live.
 
@@ -118,12 +118,12 @@ Ryan`,
     id: 'compliance-urgency',
     name: 'Compliance Deadline',
     scenario: 'State/federal mandate creating urgency to adopt',
-    subject: '{{State}} compliance deadline — MOOV can get you there',
+    subject: '{{State}} compliance deadline — Platform can get you there',
     body: `Hi {{First Name}},
 
 I wanted to flag something that might be relevant to your planning — {{State}} is requiring digital student tracking logs by {{Deadline}}.
 
-MOOV covers this completely out of the box — your sign-in data is automatically logged, timestamped, and exportable for audits. We've already helped several FL districts get compliant well ahead of the deadline.
+The platform covers this completely out of the box — your sign-in data is automatically logged, timestamped, and exportable for audits. We've already helped several FL districts get compliant well ahead of the deadline.
 
 We can typically go live in 3 weeks from a signed PO. Would it help to see exactly what the compliance report looks like?
 

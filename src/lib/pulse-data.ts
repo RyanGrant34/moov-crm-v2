@@ -59,7 +59,7 @@ export const pulseItems: PulseItem[] = [
     summary: 'Gretchen Holt is co-organizing a PA district tech showcase. 12 neighboring districts attending.',
     source: 'Foxhill District Newsletter',
     date: '2025-11-10',
-    reachOutHint: 'Ask Gretchen if MOOV can demo at the summit. One event → 12 warm referrals.',
+    reachOutHint: 'Ask Gretchen if the platform can demo at the summit. One event → 12 warm referrals.',
   },
   {
     id: 'p5',
@@ -93,7 +93,7 @@ export const pulseItems: PulseItem[] = [
     summary: 'Former superintendent retired. New interim named this week. Decision-making authority may have shifted.',
     source: 'Elmwood Gazette',
     date: '2025-11-21',
-    reachOutHint: 'Rebecca Torres may have new chain of command. Re-introduce MOOV to the new admin before Q 227406 goes cold.',
+    reachOutHint: 'Rebecca Torres may have new chain of command. Re-introduce the platform to the new admin before Q 227406 goes cold.',
     urgent: true,
   },
   {
@@ -112,7 +112,7 @@ export const pulseItems: PulseItem[] = [
     districtId: 'oakwood',
     districtName: 'Oakwood',
     type: 'linkedin',
-    headline: 'James Whitfield connected with 3 MOOV competitors on LinkedIn',
+    headline: 'James Whitfield connected with 3 platform competitors on LinkedIn',
     summary: 'Activity suggests James may be doing competitive research. Two of the profiles are sales reps from rival EdTech vendors.',
     source: 'LinkedIn',
     date: '2025-11-22',

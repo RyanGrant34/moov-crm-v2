@@ -77,7 +77,7 @@ export default function ProductsPage() {
         return `  ${name} x${li.qty} @ ${formatPrice(li.unitPrice)} = ${formatPrice(total)}`;
       })
       .join('\n');
-    return `MOOV QUOTE — ${quoteNum}
+    return `QUOTE — ${quoteNum}
 Date: ${formatDate(new Date())}
 
 Bill To:
@@ -102,7 +102,7 @@ ${notes ? '\nNotes: ' + notes : ''}`;
         {/* Header */}
         <div className="mb-6">
           <h1 className="text-xl font-semibold text-white">Product Catalog</h1>
-          <p className="text-sm text-[#71717a] mt-0.5">MOOV pricing sheet and quote builder</p>
+          <p className="text-sm text-[#71717a] mt-0.5">Pricing sheet and quote builder</p>
         </div>
 
         {/* Tabs */}
@@ -378,9 +378,9 @@ ${notes ? '\nNotes: ' + notes : ''}`;
                         <div className="w-6 h-6 rounded bg-[#22c55e] flex items-center justify-center">
                           <span className="text-[#09090b] font-bold text-xs">M</span>
                         </div>
-                        <span className="text-white font-bold text-base tracking-tight">MOOV</span>
+                        <span className="text-white font-bold text-base tracking-tight">RG</span>
                       </div>
-                      <div className="text-[#52525b] text-xs">moov.school</div>
+                      <div className="text-[#52525b] text-xs"></div>
                     </div>
                     <div className="text-right">
                       <div className="text-white font-semibold text-base">QUOTE</div>

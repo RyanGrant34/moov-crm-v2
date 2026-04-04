@@ -76,7 +76,7 @@ export const defaultTasks: Task[] = [
   },
   {
     id: 't5',
-    title: 'Re-intro MOOV to new Elmwood interim superintendent',
+    title: 'Re-introduce platform to new Elmwood interim superintendent',
     districtId: 'elmwood',
     districtName: 'Elmwood',
     dueDate: '2025-11-27',

@@ -15,7 +15,7 @@ export interface Product {
 
 export const products: Product[] = [
   // SOFTWARE
-  { id: 'license-standard', name: 'MOOV Standard License', sku: 'SW-001', category: 'software', billing: 'annual', unitPrice: 10, unit: 'per student/yr', description: 'Entry-level student access management — attendance, ID scanning, hall pass' },
+  { id: 'license-standard', name: 'Standard License', sku: 'SW-001', category: 'software', billing: 'annual', unitPrice: 10, unit: 'per student/yr', description: 'Entry-level student access management — attendance, ID scanning, hall pass' },
   { id: 'addon-classroom', name: 'Classroom Attendance Add-On', sku: 'SW-002', category: 'software', billing: 'annual', unitPrice: 0, unit: 'per student/yr', description: 'Classroom-level attendance tracking (included with full plan)' },
   { id: 'vm-annual', name: 'Visitor Management Annual Fee', sku: 'SW-003', category: 'software', billing: 'annual', unitPrice: 2175, unit: 'per building/yr', description: 'Annual Visitor Management license per building' },
 
@@ -38,7 +38,7 @@ export const products: Product[] = [
   { id: 'sticker', name: 'Kiosk Sticker', sku: 'CON-006', category: 'consumables', billing: 'free', unitPrice: 0, unit: 'each', description: 'Branding and directional stickers for kiosk units' },
 
   // SERVICES
-  { id: 'training', name: 'Training / Install', sku: 'SVC-001', category: 'services', billing: 'per_hour', unitPrice: 150, unit: 'per hour', description: 'On-site training and installation by MOOV team' },
+  { id: 'training', name: 'Training / Install', sku: 'SVC-001', category: 'services', billing: 'per_hour', unitPrice: 150, unit: 'per hour', description: 'On-site training and installation by our team' },
 
   // SUPPORT (Annual)
   { id: 'kiosk-support', name: 'Kiosk Annual Support & Insurance', sku: 'SUP-001', category: 'support', billing: 'annual', unitPrice: 1025, unit: 'per device/yr', description: 'Annual support, maintenance, insurance, replacements, OTA updates per kiosk' },

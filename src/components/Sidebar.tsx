@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Kanban, Users, Activity, BarChart3, Zap, MapPin, Radio, Calculator, CheckSquare, Mail, Package, Truck } from 'lucide-react';
+import { LayoutDashboard, Kanban, Users, Activity, BarChart3, Zap, MapPin, Radio, Calculator, CheckSquare, Mail, Package, Truck, Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const mainNav = [
@@ -23,6 +23,7 @@ const toolsNav = [
   { href: '/templates', label: 'Templates', icon: Mail },
   { href: '/products', label: 'Products', icon: Package },
   { href: '/deliveries', label: 'Deliveries', icon: Truck },
+  { href: '/summer', label: 'Summer Prep', icon: Layers },
 ];
 
 
@@ -37,7 +38,7 @@ export default function Sidebar() {
             <span className="text-[#09090b] font-bold text-sm">M</span>
           </div>
           <div>
-            <div className="text-white font-semibold text-sm tracking-tight">MOOV</div>
+            <div className="text-white font-semibold text-sm tracking-tight">RG</div>
             <div className="text-[#52525b] text-[10px]">District CRM</div>
           </div>
         </div>

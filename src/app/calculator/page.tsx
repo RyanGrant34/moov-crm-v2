@@ -13,7 +13,7 @@ function fmt(n: number) {
   return `$${Math.round(n)}`;
 }
 
-function moovCostEstimate(students: number): number {
+function platformCostEstimate(students: number): number {
   // Tier pricing: $7.13/student for licenses + $8.50/student for IDs
   const licenseRate = students <= 1000 ? 7.50 : students <= 3000 ? 7.13 : 7.00;
   return Math.round(students * licenseRate);
@@ -26,33 +26,33 @@ export default function CalculatorPage() {
   const [incidentSavings, setIncidentSavings] = useState(3);
 
   const results = useMemo(() => {
-    const moovCost = moovCostEstimate(students);
+    const platformCost = platformCostEstimate(students);
     const weeklyAdminLabor = adminHours * hourlyRate;
     const annualAdminLabor = weeklyAdminLabor * 52;
-    // MOOV reduces manual admin time by ~40%
+    // Platform reduces manual admin time by ~40%
     const laborSaved = annualAdminLabor * 0.40;
     // Incidents: avg $4,200 per incident (detention, substitute, parent calls)
     const incidentCostSaved = incidentSavings * 4200;
     const totalAnnualSavings = laborSaved + incidentCostSaved;
-    const netAnnualBenefit = totalAnnualSavings - moovCost;
-    const roi = moovCost > 0 ? ((netAnnualBenefit / moovCost) * 100) : 0;
-    const paybackMonths = totalAnnualSavings > 0 ? (moovCost / (totalAnnualSavings / 12)) : 0;
+    const netAnnualBenefit = totalAnnualSavings - platformCost;
+    const roi = platformCost > 0 ? ((netAnnualBenefit / platformCost) * 100) : 0;
+    const paybackMonths = totalAnnualSavings > 0 ? (platformCost / (totalAnnualSavings / 12)) : 0;
 
     // 18-month cashflow
     const monthly = totalAnnualSavings / 12;
     const data = Array.from({ length: 18 }, (_, i) => {
       const month = i + 1;
       const cumulativeSavings = monthly * month;
-      const netPosition = cumulativeSavings - moovCost;
+      const netPosition = cumulativeSavings - platformCost;
       return {
         month: `M${month}`,
         savings: Math.round(cumulativeSavings),
-        cost: moovCost,
+        cost: platformCost,
         net: Math.round(netPosition),
       };
     });
 
-    return { moovCost, laborSaved, incidentCostSaved, totalAnnualSavings, netAnnualBenefit, roi, paybackMonths, data, weeklyAdminLabor };
+    return { platformCost, laborSaved, incidentCostSaved, totalAnnualSavings, netAnnualBenefit, roi, paybackMonths, data, weeklyAdminLabor };
   }, [students, adminHours, hourlyRate, incidentSavings]);
 
   const paybackReached = results.paybackMonths <= 18;
@@ -147,9 +147,9 @@ export default function CalculatorPage() {
             <p className="text-[10px] font-semibold text-[#52525b] uppercase tracking-wider mb-2">Model Assumptions</p>
             <ul className="space-y-1.5">
               {[
-                'MOOV reduces admin time by 40%',
+                'Platform reduces admin time by 40%',
                 `Avg incident cost: $4,200 (sub + admin + parent engagement)`,
-                `MOOV license rate: ${students <= 1000 ? '$7.50' : students <= 3000 ? '$7.13' : '$7.00'}/student (volume tier)`,
+                `License rate: ${students <= 1000 ? '$7.50' : students <= 3000 ? '$7.13' : '$7.00'}/student (volume tier)`,
                 '5-year system lifespan assumed',
               ].map(a => (
                 <li key={a} className="flex items-start gap-1.5 text-xs text-[#71717a]">
@@ -166,7 +166,7 @@ export default function CalculatorPage() {
           {/* Value story cards */}
           <div className="grid grid-cols-2 gap-3">
             {[
-              { label: 'MOOV Investment', val: fmt(results.moovCost), sub: 'one-time', icon: DollarSign, color: '#3b82f6' },
+              { label: 'Platform Investment', val: fmt(results.platformCost), sub: 'one-time', icon: DollarSign, color: '#3b82f6' },
               { label: 'Annual Savings', val: fmt(results.totalAnnualSavings), sub: 'labor + incidents', icon: TrendingUp, color: '#22c55e' },
               { label: 'ROI', val: `${Math.round(results.roi)}%`, sub: 'year 1', icon: TrendingUp, color: results.roi > 0 ? '#22c55e' : '#ef4444' },
               { label: 'Payback Period', val: paybackReached ? `${results.paybackMonths.toFixed(1)} mo` : '>18 mo', sub: 'break-even', icon: Clock, color: results.paybackMonths <= 6 ? '#22c55e' : results.paybackMonths <= 12 ? '#f59e0b' : '#ef4444' },
@@ -188,7 +188,7 @@ export default function CalculatorPage() {
             <p className="text-sm text-[#d4d4d8] leading-relaxed">
               A district with <span className="text-white font-semibold">{students.toLocaleString()} students</span> currently
               spends <span className="text-white font-semibold">{fmt(results.weeklyAdminLabor * 52)}/year</span> in admin labor
-              on attendance management. MOOV recovers <span className="text-[#22c55e] font-semibold">{fmt(results.laborSaved)}</span> of
+              on attendance management. Platform recovers <span className="text-[#22c55e] font-semibold">{fmt(results.laborSaved)}</span> of
               that annually — plus <span className="text-[#22c55e] font-semibold">{fmt(results.incidentCostSaved)}</span> in
               avoided incident costs. The system pays for itself in{' '}
               <span className="text-white font-bold">{results.paybackMonths.toFixed(1)} months</span>.
@@ -254,7 +254,7 @@ export default function CalculatorPage() {
               formatter={(val) => [fmt(Number(val)), '']}
             />
             <ReferenceLine
-              y={results.moovCost}
+              y={results.platformCost}
               stroke="#3b82f6"
               strokeDasharray="4 4"
               label={{ value: 'Break-even', fill: '#3b82f6', fontSize: 10, position: 'right' }}

@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useCallback } from 'react';
 import { AlertTriangle, School, DollarSign, Calendar, Zap, CheckCircle2, Clock, Radio, Flame } from 'lucide-react';
+import { PipelineFlow } from '@/components/pipeline-flow';
 import { leadScore } from '@/lib/scoring';
 import {
   districts,
@@ -324,6 +325,11 @@ export default function PipelinePage() {
             </div>
           );
         })}
+      </div>
+
+      {/* Pipeline Flow Chart */}
+      <div className="bg-[#0f0f10] border border-[#1c1c1e] rounded-xl p-6 mt-6">
+        <PipelineFlow />
       </div>
 
       {/* Webhook toast notifications */}
